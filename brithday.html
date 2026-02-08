@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Love ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #ff5f9e, #ff9a9e);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 40px 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.name {
+    font-size: 1.8em;
+    color: #fffacd;
+}
+
+img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin: 20px 0;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+button {
+    background: #fff;
+    color: #ff2e63;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ffe6ee;
+}
+
+#surprise {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #fffacd;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.95em;
+}
+
+/* Heart Animation */
+.heart {
+    position: fixed;
+    top: -10px;
+    color: red;
+    font-size: 20px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <h1>🎂 Happy Birthday 🎂</h1>
+    <div class="name">My Love ❤️ (Aru)</div>
+
+    <!-- Girlfriend Photo -->
+    <img src="C:\Users\rutik tankar\Downloads\ChatGPT Image Aug 17, 2025, 11_34_14 PM.png" alt="My Love">
+
+    <div class="card">
+        <p>
+            You are the most beautiful part of my life 💕  
+            Every smile of yours makes my world brighter.
+        </p>
+        <p>
+            I’m so lucky to have you.  
+            May all your dreams come true 🌸
+        </p>
+
+        <button onclick="showSurprise()">🎁 Click for Surprise</button>
+        <div id="surprise">
+            I love you sooo much ❤️  
+            Forever & Always 😘
+        </div>
+    </div>
+
+    <footer>
+        — With endless love, <br>
+        <b>Your Lajo 💖</b>
+    </footer>
+</div>
+
+<script>
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
+
+// Falling hearts
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (2 + Math.random() * 3) + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 5000);
+}, 300);
+</script>
+
+</body>
+</html>
